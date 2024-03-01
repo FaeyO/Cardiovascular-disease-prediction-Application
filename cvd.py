@@ -11,7 +11,7 @@ from pathlib import Path
 dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(dir))
 
-model = pickle.load(open('C:\\Users\\USER\\Desktop\\ML_projects\\Cardio_data\\LGBM_model.pkl','rb'))
+model = pickle.load(open('./LGBM_model.pkl','rb'))
 
 def main():
     st.set_page_config(page_title="Cardiovascular disease prediction App")
